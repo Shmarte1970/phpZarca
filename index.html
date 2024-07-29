@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Subida de Archivos</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+<div class="form-container">
+    <h1>Subir Archivos</h1>
+    <form action="upload.php" method="post" enctype="multipart/form-data">
+        <label for="reference">Referencia:</label>
+        <input type="text" id="reference" name="reference" required>
+        
+        <div class="file-drop-area">
+            Arrastra el archivo aquí o haz clic para seleccionar
+            <input type="file" name="fileToUpload" id="fileToUpload" required>
+        </div>
+        
+        <button type="submit" name="submit">Enviar</button>
+    </form>
+</div>
+
+</body>
+</html>
